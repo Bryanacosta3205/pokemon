@@ -1,7 +1,6 @@
-import { Grid } from "@mui/material";
+import { Grid, Pagination } from "@mui/material";
 import PokemonCard from "./PokemonCard";
 import { usePokemons } from "../hooks/usePokemon";
-import PaginationControls from "./PaginationControls";
 import { useState } from "react";
 import PokemonCardSkeleton from "./PokemonCardSkeleton";
 
@@ -40,12 +39,15 @@ const PokemonList = () => {
               </Grid>
             ))}
       </Grid>
-
-      <PaginationControls
-        onNext={() => setPage((p) => p + 1)}
-        onPrev={() => setPage((p) => Math.max(p - 1, 1))}
-        page={page}
-      />
+      <div className="flex justify-center mt-5">
+        <Pagination
+          count={pokemons?.pagination.totalPages}
+          variant="outlined"
+          onChange={(_, page) => {
+            setPage(page);
+          }}
+        />
+      </div>
     </>
   );
 };

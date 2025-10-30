@@ -45,7 +45,7 @@ const PokemonCard = ({ pokemon }: Props) => {
         }}
       >
         <Image
-          src={pokemon.image}
+          src={pokemon.image || "/placeholder.png"}
           alt={pokemon.name}
           height={120}
           width={140}
