@@ -1,6 +1,6 @@
 import { render, screen, waitFor } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 jest.mock("@/app/lib/api/pokemon", () => ({
   getPokemons: jest.fn(),
@@ -14,9 +14,7 @@ interface Pokemon {
   name: string;
 }
 
-interface PokemonListPageProps {}
-
-const PokemonListPage: React.FC<PokemonListPageProps> = () => {
+const PokemonListPage = () => {
   const [pokemons, setPokemons] = useState<Pokemon[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);

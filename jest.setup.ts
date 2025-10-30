@@ -14,12 +14,19 @@ Object.defineProperty(window, "matchMedia", {
   })),
 });
 
-global.IntersectionObserver = class IntersectionObserver {
-  constructor() {}
-  disconnect() {}
-  observe() {}
-  takeRecords() {
+class MockIntersectionObserver implements IntersectionObserver {
+  readonly root: Element | null = null;
+  readonly rootMargin: string = "";
+  readonly thresholds: ReadonlyArray<number> = [];
+
+  disconnect(): void {}
+  observe(): void {}
+  unobserve(): void {}
+  takeRecords(): IntersectionObserverEntry[] {
     return [];
   }
-  unobserve() {}
-} as any;
+}
+
+(
+  global as unknown as { IntersectionObserver: typeof IntersectionObserver }
+).IntersectionObserver = MockIntersectionObserver;

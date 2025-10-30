@@ -30,12 +30,21 @@ exports[`PokemonCard Snapshot Tests matches snapshot for basic pokemon 1`] = `
         </span>
       </div>
     </div>
-    <img
-      alt="bulbasaur"
-      class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-1j9c31z-MuiCardMedia-root"
-      src="https://example.com/bulbasaur.png"
+    <div
+      class="flex justify-center"
       style="background: linear-gradient( 135deg, rgba(255, 215, 0, 0.8) 0%, rgba(173, 216, 230, 0.8) 40%, rgba(255, 182, 193, 0.8) 100% ); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);"
-    />
+    >
+      <img
+        alt="bulbasaur"
+        data-nimg="1"
+        decoding="async"
+        height="120"
+        src="/_next/image?url=https%3A%2F%2Fexample.com%2Fbulbasaur.png&w=384&q=75"
+        srcset="/_next/image?url=https%3A%2F%2Fexample.com%2Fbulbasaur.png&w=256&q=75 1x, /_next/image?url=https%3A%2F%2Fexample.com%2Fbulbasaur.png&w=384&q=75 2x"
+        style="color: transparent;"
+        width="140"
+      />
+    </div>
   </div>
 </div>
 `;
@@ -70,12 +79,21 @@ exports[`PokemonCard Snapshot Tests matches snapshot for multi-type pokemon 1`] 
         </span>
       </div>
     </div>
-    <img
-      alt="charizard"
-      class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-1j9c31z-MuiCardMedia-root"
-      src="https://example.com/charizard.png"
+    <div
+      class="flex justify-center"
       style="background: linear-gradient( 135deg, rgba(255, 215, 0, 0.8) 0%, rgba(173, 216, 230, 0.8) 40%, rgba(255, 182, 193, 0.8) 100% ); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);"
-    />
+    >
+      <img
+        alt="charizard"
+        data-nimg="1"
+        decoding="async"
+        height="120"
+        src="/_next/image?url=https%3A%2F%2Fexample.com%2Fcharizard.png&w=384&q=75"
+        srcset="/_next/image?url=https%3A%2F%2Fexample.com%2Fcharizard.png&w=256&q=75 1x, /_next/image?url=https%3A%2F%2Fexample.com%2Fcharizard.png&w=384&q=75 2x"
+        style="color: transparent;"
+        width="140"
+      />
+    </div>
   </div>
 </div>
 `;
@@ -105,12 +123,21 @@ exports[`PokemonCard Snapshot Tests matches snapshot for single-type pokemon 1`]
         </span>
       </div>
     </div>
-    <img
-      alt="pikachu"
-      class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-1j9c31z-MuiCardMedia-root"
-      src="https://example.com/pikachu.png"
+    <div
+      class="flex justify-center"
       style="background: linear-gradient( 135deg, rgba(255, 215, 0, 0.8) 0%, rgba(173, 216, 230, 0.8) 40%, rgba(255, 182, 193, 0.8) 100% ); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);"
-    />
+    >
+      <img
+        alt="pikachu"
+        data-nimg="1"
+        decoding="async"
+        height="120"
+        src="/_next/image?url=https%3A%2F%2Fexample.com%2Fpikachu.png&w=384&q=75"
+        srcset="/_next/image?url=https%3A%2F%2Fexample.com%2Fpikachu.png&w=256&q=75 1x, /_next/image?url=https%3A%2F%2Fexample.com%2Fpikachu.png&w=384&q=75 2x"
+        style="color: transparent;"
+        width="140"
+      />
+    </div>
   </div>
 </div>
 `;

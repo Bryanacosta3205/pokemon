@@ -4,7 +4,7 @@ import PokemonCard from "@/app/components/PokemonCard";
 import { Pokemon } from "@/app/interfaces/pokemon";
 
 jest.mock("@/app/components/PokemonTypeList", () => {
-  return function MockPokemonTypeList({ types }: any) {
+  return function MockPokemonTypeList({ types }: { types: string[] }) {
     return (
       <div data-testid="pokemon-type-list">
         {types.map((type: string) => (
@@ -50,7 +50,10 @@ describe("PokemonCard", () => {
 
       const image = screen.getByRole("img", { name: /bulbasaur/i });
       expect(image).toBeInTheDocument();
-      expect(image).toHaveAttribute("src", mockPokemon.image);
+      expect(image).toHaveAttribute(
+        "src",
+        "/_next/image?url=https%3A%2F%2Fexample.com%2Fbulbasaur.png&w=384&q=75"
+      );
       expect(image).toHaveAttribute("alt", mockPokemon.name);
     });
 
@@ -134,7 +137,10 @@ describe("PokemonCard", () => {
       render(<PokemonCard pokemon={mockPokemon} />);
 
       const image = screen.getByRole("img");
-      expect(image).toHaveAttribute("src", "https://example.com/bulbasaur.png");
+      expect(image).toHaveAttribute(
+        "src",
+        "/_next/image?url=https%3A%2F%2Fexample.com%2Fbulbasaur.png&w=384&q=75"
+      );
     });
   });
 
