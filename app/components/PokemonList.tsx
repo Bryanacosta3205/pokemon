@@ -8,6 +8,7 @@ const PokemonList = () => {
   const [page, setPage] = useState(1);
   const limit = 100;
   const { pokemons, isLoading, error } = usePokemons(page, limit);
+
   if (isLoading) {
     return <div>Loading...</div>;
   }

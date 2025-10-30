@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`PokemonCard Snapshot Tests matches snapshot for basic pokemon 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root h-80 flex flex-col px-3 py-2 border-6 border-neutral-200 css-i2mtdz-MuiPaper-root-MuiCard-root"
+    style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12); background-color: rgb(242, 242, 242);"
+  >
+    <div
+      class="flex justify-between flex-row px-0 mb-2"
+    >
+      <div
+        class="MuiTypography-root MuiTypography-h6 MuiTypography-alignCenter css-rc5xui-MuiTypography-root"
+        style="--Typography-textAlign: center;"
+      >
+        bulbasaur
+      </div>
+      <div
+        data-testid="pokemon-type-list"
+      >
+        <span
+          data-testid="type-grass"
+        >
+          grass
+        </span>
+        <span
+          data-testid="type-poison"
+        >
+          poison
+        </span>
+      </div>
+    </div>
+    <img
+      alt="bulbasaur"
+      class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-1j9c31z-MuiCardMedia-root"
+      src="https://example.com/bulbasaur.png"
+      style="background: linear-gradient( 135deg, rgba(255, 215, 0, 0.8) 0%, rgba(173, 216, 230, 0.8) 40%, rgba(255, 182, 193, 0.8) 100% ); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);"
+    />
+  </div>
+</div>
+`;
+
+exports[`PokemonCard Snapshot Tests matches snapshot for multi-type pokemon 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root h-80 flex flex-col px-3 py-2 border-6 border-neutral-200 css-i2mtdz-MuiPaper-root-MuiCard-root"
+    style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12); background-color: rgb(242, 242, 242);"
+  >
+    <div
+      class="flex justify-between flex-row px-0 mb-2"
+    >
+      <div
+        class="MuiTypography-root MuiTypography-h6 MuiTypography-alignCenter css-rc5xui-MuiTypography-root"
+        style="--Typography-textAlign: center;"
+      >
+        charizard
+      </div>
+      <div
+        data-testid="pokemon-type-list"
+      >
+        <span
+          data-testid="type-fire"
+        >
+          fire
+        </span>
+        <span
+          data-testid="type-flying"
+        >
+          flying
+        </span>
+      </div>
+    </div>
+    <img
+      alt="charizard"
+      class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-1j9c31z-MuiCardMedia-root"
+      src="https://example.com/charizard.png"
+      style="background: linear-gradient( 135deg, rgba(255, 215, 0, 0.8) 0%, rgba(173, 216, 230, 0.8) 40%, rgba(255, 182, 193, 0.8) 100% ); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);"
+    />
+  </div>
+</div>
+`;
+
+exports[`PokemonCard Snapshot Tests matches snapshot for single-type pokemon 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root h-80 flex flex-col px-3 py-2 border-6 border-neutral-200 css-i2mtdz-MuiPaper-root-MuiCard-root"
+    style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12); background-color: rgb(242, 242, 242);"
+  >
+    <div
+      class="flex justify-between flex-row px-0 mb-2"
+    >
+      <div
+        class="MuiTypography-root MuiTypography-h6 MuiTypography-alignCenter css-rc5xui-MuiTypography-root"
+        style="--Typography-textAlign: center;"
+      >
+        pikachu
+      </div>
+      <div
+        data-testid="pokemon-type-list"
+      >
+        <span
+          data-testid="type-electric"
+        >
+          electric
+        </span>
+      </div>
+    </div>
+    <img
+      alt="pikachu"
+      class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-1j9c31z-MuiCardMedia-root"
+      src="https://example.com/pikachu.png"
+      style="background: linear-gradient( 135deg, rgba(255, 215, 0, 0.8) 0%, rgba(173, 216, 230, 0.8) 40%, rgba(255, 182, 193, 0.8) 100% ); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);"
+    />
+  </div>
+</div>
+`;
