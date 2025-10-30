@@ -23,10 +23,14 @@ const PokemonCard = ({ pokemon }: Props) => {
       <div className="flex justify-between flex-row px-0 mb-2">
         <Typography
           variant="h6"
+          noWrap
           component="div"
           fontWeight={"bold"}
           align="center"
-          sx={{ textTransform: "capitalize" }}
+          sx={{
+            textTransform: "capitalize",
+            maxWidth: 120,
+          }}
         >
           {pokemon.name}
         </Typography>
