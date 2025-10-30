@@ -1,4 +1,4 @@
-import { Card, CardContent, CardMedia, Typography } from "@mui/material";
+import { Card, CardMedia, Typography } from "@mui/material";
 import { Pokemon } from "../interfaces/pokemon";
 import PokemonTypeList from "./PokemonTypeList";
 

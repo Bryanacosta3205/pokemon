@@ -1,4 +1,4 @@
-import { FormControl, Grid, InputLabel, MenuItem, Select } from "@mui/material";
+import { Grid } from "@mui/material";
 import PokemonCard from "./PokemonCard";
 import { usePokemons } from "../hooks/usePokemon";
 import PaginationControls from "./PaginationControls";
