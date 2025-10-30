@@ -1,6 +1,7 @@
 import { Card, CardMedia, Typography } from "@mui/material";
 import { Pokemon } from "../interfaces/pokemon";
 import PokemonTypeList from "./PokemonTypeList";
+import Image from "next/image";
 
 type Props = {
   pokemon: Pokemon;
@@ -31,15 +32,8 @@ const PokemonCard = ({ pokemon }: Props) => {
         </Typography>
         <PokemonTypeList types={pokemon.types} />
       </div>
-      <CardMedia
-        component="img"
-        image={pokemon.image}
-        alt={pokemon.name}
-        sx={{
-          height: 140,
-          objectFit: "contain",
-          bgcolor: "#f5f5f5",
-        }}
+      <div
+        className="flex justify-center"
         style={{
           background: `linear-gradient(
             135deg,
@@ -49,7 +43,15 @@ const PokemonCard = ({ pokemon }: Props) => {
           )`,
           boxShadow: "0 4px 15px rgba(0, 0, 0, 0.1)",
         }}
-      />
+      >
+        <Image
+          src={pokemon.image}
+          alt={pokemon.name}
+          height={120}
+          width={140}
+          preload={true}
+        />
+      </div>
     </Card>
   );
 };
